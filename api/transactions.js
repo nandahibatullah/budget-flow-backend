@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports.post = (event, context, callback) => {
+async function post(event, context, callback) {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
@@ -10,5 +8,6 @@ module.exports.post = (event, context, callback) => {
   };
 
   callback(null, response);
+}
 
-};
+export default { post };
