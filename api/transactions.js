@@ -1,4 +1,4 @@
-async function post(event, context, callback) {
+function post(event, context, callback) {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
@@ -10,4 +10,4 @@ async function post(event, context, callback) {
   callback(null, response);
 }
 
-export default { post };
+module.exports = { post };
