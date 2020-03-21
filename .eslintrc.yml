@@ -8,4 +8,11 @@ globals:
   SharedArrayBuffer: readonly
 parserOptions:
   ecmaVersion: 2018
-rules: {}
+rules: {
+  "import/no-unresolved": [ 
+    2, 
+    { 
+      caseSensitive: false 
+    } 
+  ]
+}
