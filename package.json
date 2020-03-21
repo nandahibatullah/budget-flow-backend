@@ -1,29 +1,10 @@
 {
-  "name": "budget-flow-backend",
+  "name": "test",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "aws-sdk": "^2.643.0",
-    "uuid": "^7.0.2"
-  },
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.1",
-    "serverless-offline": "^6.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nandahibatullah/budget-flow-backend.git"
-  },
+  "description": "Serverless CRUD service exposing a REST HTTP interface",
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nandahibatullah/budget-flow-backend/issues"
-  },
-  "homepage": "https://github.com/nandahibatullah/budget-flow-backend#readme"
+  "license": "MIT",
+  "dependencies": {
+    "uuid": "^2.0.3"
+  }
 }
