@@ -13,8 +13,7 @@ provider:
   stage: dev
   region: ap-southeast-2
   environment:
-    CANDIDATE_TABLE: ${self:service}-${opt:stage, self:provider.stage}
-    CANDIDATE_EMAIL_TABLE: "candidate-email-${opt:stage, self:provider.stage}"
+    TRANSACTIONS_TABLE: ${self:service}-${opt:stage, self:provider.stage}
   iamRoleStatements:
     - Effect: Allow
       Action:
