@@ -1,8 +1,1 @@
-{
-    "body": {
-        "date": "2020-03-21",
-        "amount": 20,
-        "description": "Example",
-        "category": "food"
-    }
-}
+{"date": "2020-03-21","amount": 20,"description": "Example","category": "food"}

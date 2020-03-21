@@ -3,6 +3,9 @@ service: budget-flow-backend
 app: budget-flow-backend
 org: nandahibatullah
 
+plugins:
+  - serverless-offline
+
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
 # frameworkVersion: "=X.X.X"
@@ -21,7 +24,7 @@ provider:
         - dynamodb:Scan
         - dynamodb:GetItem
         - dynamodb:PutItem
-      Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.TRANSACTIONS_TABLE}"
+      Resource: "*"
 
 resources:
   Resources:
