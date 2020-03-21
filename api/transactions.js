@@ -27,7 +27,7 @@ function transactionInfo(date, amount, description, category) {
 }
 
 async function post(event, context, callback) {
-  const requestBody = JSON.parse(JSON.stringify(event.body));
+  const requestBody = JSON.parse(event.body);
   const {
     date,
     amount,
