@@ -10,7 +10,6 @@ provider:
   stage: ${env:STAGE}
   region: ${env:REGION}
   environment:
-    IS_OFFLINE: ${env:IS_OFFLINE}
     DYNAMODB_TABLE: ${self:service}-${opt:stage, self:provider.stage}
   iamRoleStatements:
     - Effect: Allow

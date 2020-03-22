@@ -1,7 +1,6 @@
+/* eslint-disable no-console */
 const uuid = require('uuid');
-const AWS = require('aws-sdk');
-
-const dynamoDb = new AWS.DynamoDB.DocumentClient();
+const dynamoDb = require('serverless-dynamodb-client').doc;
 
 module.exports.create = (event, context, callback) => {
   const timestamp = new Date().getTime();

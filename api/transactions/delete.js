@@ -1,6 +1,5 @@
-const AWS = require('aws-sdk');
-
-const dynamoDb = new AWS.DynamoDB.DocumentClient();
+/* eslint-disable no-console */
+const dynamoDb = require('serverless-dynamodb-client').doc;
 
 module.exports.delete = (event, context, callback) => {
   const params = {
