@@ -10,7 +10,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - name: Clone repository
+      uses: actions/checkout@master
+    - name: Install dependencies
+      run: |
+        npm install
     - name: serverless deploy
       uses: serverless/github-action@v1.53.0
       with:

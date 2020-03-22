@@ -1,6 +1,6 @@
-const AWS = require('aws-sdk');
+/* eslint-disable no-console */
+const dynamoDb = require('serverless-dynamodb-client').doc;
 
-const dynamoDb = new AWS.DynamoDB.DocumentClient();
 const params = {
   TableName: process.env.DYNAMODB_TABLE,
 };
