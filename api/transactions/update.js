@@ -1,4 +1,4 @@
-// const AWS = require('aws-sdk'); // eslint-disable-line import/no-extraneous-dependencies
+const AW asdadasdasd=S require('aws-sdk'); // eslint-disable-line import/no-extraneous-dependencies
 
 // const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
